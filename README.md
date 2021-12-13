@@ -1,24 +1,24 @@
 # Manage Power BI Embedded Capacity with One Click Deployment 
 This 1-click deployment allows the user to deploy an automation account with runbooks and schedules that can help control the power bi embedded capacity.
 
-## Deployment Step
+# Deployment Step
 
 Click 'Deploy To Azure' button given below to deploy all the resources.
 
-    [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flipinght%2FPBI-Embedded-Control-1-Click-Deployment%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Flipinght%2FPBI-Embedded-Control-1-Click-Deployment%2Fblob%2Fmain%2Fazuredeploy.json)
 
    - Provide the values for:
 
-     - Resource group (Same resource group where your embedded capacity sits, if you wish to deploy in a different resource group, please see [Role Assignment](https://github.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/blob/main/README.md##Role-Assignment) first. )
+     - Resource group (Same resource group where your embedded capacity sits, if you wish to deploy in a different resource group, please see [Role Assignment](https://github.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/blob/main/README.md#Role-Assignment) first. )
      - automationAccountName (Default is aa- followed by a 13 character unique string determined by your resource group id)
      - embeddedCapacityName (The name of the embedded capacity that you would like to schedule control for)
      - Location (Default is your resource group location)
-     - baseTime (Default is the current UTC time, by default Resume schedule will run ONCE 7 mins from this time, Pause schedule will run daily starting 10 mins from this time. You can manage schedule post deployment, please see [Managing Schedule](https://github.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/blob/main/README.md##Managing-Schedule))
+     - baseTime (Default is the current UTC time, by default Resume schedule will run ONCE 7 mins from this time, Pause schedule will run daily starting 10 mins from this time. You can manage schedule post deployment, please see [Managing Schedule](https://github.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/blob/main/README.md#Managing-Schedule))
 
    - Click 'Review + Create'.
    - On successful validation, click 'Create'.
 
-## Azure Services being deployed
+# Azure Services being deployed
 
 Following resources and role assignments are deployed with this template.
 
@@ -30,7 +30,7 @@ Following resources and role assignments are deployed with this template.
 
 ![deployment.jpg](images/deployment.jpg)
 
-## Managing Schedule
+# Managing Schedule
 
 You provided baseTime as part of the deployment. By default Resume schedule will run ONCE 7 mins from this time, Pause schedule will run daily starting 10 mins from this time. After the resume schedule has run once, the status will change to expired. You do not need to change it if you only wish to pause the capacity on a schedule.
 
@@ -41,7 +41,7 @@ If you wish to change the schedule (e.g. make resume schedule reccuring), you ca
 ![schedule.jpg](images/schedule.jpg)
 
 
-## Role Assignment 
+# Role Assignment 
 
 Role Assignment is needed for automation account to have permission to manage the Power BI embedded capacity. If you do not have permission to assign roles at the resource group level or if you have selected a different resource group vs the resource group of embedded capacity during deployment step, the role assignment deployment will fail while all other resources will still deploy. 
 
@@ -49,6 +49,6 @@ If role assignment fails, go to **Access Control(IAM)** of the embedded capacity
 
 ![role.jpg](images/role.jpg)
 
-## Multiple Embedded Capacities
+# Multiple Embedded Capacities
 
 You can duplicate the scripts to manage multiple embedded capacites in the same runbooks post deployment. Just remember to do the role assignment for the additional embedded capacities that you add in. 

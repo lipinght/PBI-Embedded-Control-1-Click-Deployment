@@ -69,7 +69,7 @@
                 "logProgress": false,
                 "logActivityTrace": 0,
                 "publishContentLink": {
-                  "uri": "https://raw.githubusercontent.com/lipinght/PBICookbook/main/Embedded/pause.ps1"
+                  "uri": "https://raw.githubusercontent.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/main/scripts/pause.ps1"
                 }
             }
         },
@@ -87,7 +87,7 @@
                 "logProgress": false,
                 "logActivityTrace": 0,
                 "publishContentLink": {
-                  "uri": "https://raw.githubusercontent.com/lipinght/PBICookbook/main/Embedded/resume.ps1"
+                  "uri": "https://raw.githubusercontent.com/lipinght/PBI-Embedded-Control-1-Click-Deployment/main/scripts/resume.ps1"
                 }
             }
         },
