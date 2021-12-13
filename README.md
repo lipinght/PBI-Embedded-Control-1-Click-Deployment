@@ -5,7 +5,7 @@ This 1-click deployment allows the user to deploy an automation account with run
 
 Click 'Deploy To Azure' button given below to deploy all the resources.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Flipinght%2FPBI-Embedded-Control-1-Click-Deployment%2Fblob%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flipinght%2FPBI-Embedded-Control-1-Click-Deployment%2Fmain%2Fazuredeploy.json)
 
    - Provide the values for:
 
